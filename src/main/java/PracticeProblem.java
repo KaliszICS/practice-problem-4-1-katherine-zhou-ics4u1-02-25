@@ -1,27 +1,27 @@
-public class PracticeProblem {
+public class Rectangle{
+	private double length;
+	private double width;
 
-	public static void main(String args[]) {
+
+	public Ractangle(double length, double width){
+		this.length = length;
+		this.width = width;
 
 	}
 
-	public static void q1() {
-		//Write question 1 code here
+	public double getLength(){
+		return this.length;
 	}
 
-	public static void q2() {
-		//Write question 2 code here
+	public double getWidth(){
+		return this.width;
 	}
 
-	public static void q3() {
-		//Write question 3 code here
+	public double area(){
+		return this.width*this.length;
 	}
 
-	public static void q4() {
-		//Write question 4 code here
+	public double perimeter(){
+		return (this.width *2) + (this.length *2);
 	}
-
-	public static void q5() {
-		//Write question 5 code here
-	}
-
 }
