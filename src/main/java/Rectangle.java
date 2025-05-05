@@ -22,6 +22,9 @@ public class Rectangle{
 	}
 
 	public double perimeter(){
-		return (this.width *2) + (this.length *2);
+		if (this.length==0|| this.width==0){
+			return 0;
+		}
+		return (this.length+this.width)*2;
 	}
 }
