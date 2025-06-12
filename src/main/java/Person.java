@@ -1,25 +1,18 @@
 public class Person {
     private String name;
-    private double age;
-    private int height;
-    private int weight;
-    private String eyeColour;
-    private String hairColour;
+    private int age, weight, height;
+    private String eyeColour, hairColour;
 
-    public Person (String name, double age, int height, int weight, String eye, String hair){
+    public Person(String name, int age, int height, int weight, String eyeColour, String hairColour){
         this.name = name;
-        this.age = age;
-        this.height = height;
-        this.weight= weight;
-        this.eyeColour=eye;
-        this.hairColour= hair;
+        this.age=age;
+        this.weight = weight;
+        this.height= height;
+        this.eyeColour= eyeColour;
+        this.hairColour= hairColour;
     }
 
-    public String getName(){
-        return this.name;
-    }
-
-    public double getAge(){
+    public int getAge(){
         return this.age;
     }
 
@@ -31,13 +24,15 @@ public class Person {
         return this.weight;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public String getHairColour(){
         return this.hairColour;
     }
-
+    
     public String getEyeColour(){
         return this.eyeColour;
-    }
-
-
+    } 
 }
